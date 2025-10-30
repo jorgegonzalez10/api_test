@@ -7,6 +7,6 @@ class JsonWebTokenService
   end
 
   def self.decode(token)
-    JWR.decode(token, SECRET_KEY).first
+    JWT.decode(token, SECRET_KEY).first
   end
 end
